@@ -1,0 +1,104 @@
+h1{
+    text: {
+        align: center;
+        transform: capitalize;
+    }
+    color: white;
+    font: {
+        size: 40px;
+        weight: 700px;
+    }    
+    padding: 1rem 0;
+}
+.navbar{
+    padding: 0.5rem 1.8rem;
+    display: block;
+    background-color: white;
+    border-top: 3px solid $blue;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    .navbar-item{
+        a{
+            text: {
+                transform: capitalize;
+                decoration: none;
+            }
+            color: $blue;
+                font: {
+                    size: 1.5rem;
+                    weight: 500;
+                }
+        }
+    }
+}
+.grid-layout{
+    display: grid;
+    grid-template-areas: "box1 box3 box4"
+                         "box2 box3 box5"
+                         "box2 box3 box6";
+    gap: 1.2rem;
+    grid-template-rows: repeat(3, minmax(120px,1fr));
+    grid-template-columns: repeat(auto-fit, 1fr);
+    margin-bottom: 10rem;
+
+}
+.box1{
+    grid-area: box1;
+}
+.box2{
+    grid-area: box2;
+    margin-bottom: 20px;
+    img{
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: 0 auto 1.5rem auto;
+    }
+}
+.box3{
+    grid-area: box3;
+    img{
+        width: 250px;
+        height: 240px;
+        display: block;
+        margin: 1rem auto 2.4rem auto;
+        border-radius: 50%;
+    }
+}
+.box4{
+    grid-area: box4;
+    a{
+        background-color: $red;
+        color: white;
+        display: block;
+        padding: 0.5625rem;
+        margin: -0.4875rem -0.59375rem -1rem -0.59375rem;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+}
+.box5{
+    grid-area: box5;
+    h2{
+        background-color: $blue;
+        color: white;
+        display: block;
+        padding: 0.5rem;
+        margin: -0.625rem -0.625rem 0.3125rem -0.625rem;
+    }
+    p{
+        margin-bottom: 20px;
+    }
+    
+}
+.box6{
+    grid-area: box6;
+    a{
+        margin-bottom: -10px;
+    }
+}
+h2{
+    text-transform: capitalize;
+    font-size: 22px;
+    margin-bottom: 8px;
+}

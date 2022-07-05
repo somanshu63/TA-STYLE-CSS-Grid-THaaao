@@ -1,0 +1,35 @@
+body{
+    background-color: $background;
+    font-family: $font;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+.container{
+    width: 1280px;
+    max-width: 100%;
+    padding: 0 7rem;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    background-color: white;
+    border: {
+        top: 3px solid $blue;
+        radius: 4px;
+    }
+    padding: 0.6rem;
+    p{
+        margin-bottom: 1.5rem;
+    }
+    a{
+        margin-bottom: 0;
+    }
+}
+a{
+    text-decoration: none;
+    color: $red;
+    font-weight: 500; 
+}
