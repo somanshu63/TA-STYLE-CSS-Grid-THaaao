@@ -1,0 +1,64 @@
+@import "vars";
+@import "reset";
+@import "general";
+@import "home";
+
+@media screen and (max-width:992px) and (min-width:768px) {
+    html{
+        font-size: 14px;
+    }
+    .container{
+		max-width: 960px;
+		width: 100%;
+        padding: 0 1rem;
+    }
+    .grid-layout{
+        grid-template-areas: "box1 box4"
+                             "box2 box5"
+                             "box2 box6"
+                             "box3 ."
+                             "box3 ."
+                             "box3 .";
+    }
+    .box3{
+        margin-top: -20px;
+    }
+    .box4{
+        a{
+            margin-top: 0.92rem;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    html{
+        font-size: 12px;
+    }
+    .container{
+		max-width: 960px;
+		width: 100%;
+        padding: 0 1rem;
+    }
+    br{
+        display: none;
+    }
+    .grid-layout{
+        grid-template-areas: "box1"
+                             "box2"
+                             "box2"
+                             "box3"
+                             "box3"
+                             "box3"
+                             "box4"
+                             "box5"
+                             "box6";
+    }
+    .box3{
+        margin-top: -20px;
+    }
+    .box4{
+        a{
+            margin-bottom: -0.62rem;
+        }
+    }
+}
