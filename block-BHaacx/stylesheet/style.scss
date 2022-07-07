@@ -1,0 +1,102 @@
+@import "vars";
+@import "reset";
+@import "general";
+@import "home";
+
+@media screen and (max-width:768px) {
+    html{
+        font-size: 12px;
+    }
+    .container{
+        max-width: 720px;
+        width: 100%;
+    }
+    .header{
+        padding: 1rem;
+        position: static;
+        .navbar{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100vh;
+            width: 100vw;
+            background-color: $red;
+            padding-top: 10rem;
+            padding-left: 35%;
+            z-index: 90;
+            .flex{
+                display: inline-block;
+            }
+            .navbar-list{
+                margin: 0 auto;
+                text-align: center;
+                .navbar-item{
+                    margin: 32px 0;
+                    color: white;
+                    font-size: 32px;
+                }
+            }
+        }
+        #bars{
+            display: inline-block;
+            z-index: 100;
+            padding: 0.5rem;
+            background-color: white;
+            border-radius: 8px;
+            i{
+                color: $golden;
+            }
+        }
+        #checkbox:checked ~ .navbar{
+            display: inline-block;
+        }
+    }
+    .grid-layout{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sm-grid{
+        grid-column: span 2;
+    }
+    .box2{
+        article{
+            margin: 2.5rem;
+        }
+    }
+    .box3{
+        padding: 2.5rem;
+    }
+    .box4{
+        .img{
+            height: 120%;
+        }
+    }
+    .box10,.box13{
+        .img{
+            height: 100%;
+        }
+    }
+    .box12,.box14{
+        margin-left: 0;
+        .btn-secondary{
+            width: 100%;
+        }    
+    }
+    .map{
+        height: 350px;
+        iframe{
+            width: 100%;
+            height: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    .footer{
+        margin-top: -4rem;
+        .footer-navbar{
+            margin-bottom: -3rem;
+        }    
+    }
+}

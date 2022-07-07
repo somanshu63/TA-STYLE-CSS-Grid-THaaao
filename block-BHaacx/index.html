@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>stimulus grid-assignment2</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <script src="https://kit.fontawesome.com/615eec2c8f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="container header center flex">
+        <a href="" class="brand">stimulus</a>
+        <label for="checkbox" id="bars">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <nav class="navbar">
+            <ul class="flex navbar-list">
+                <li class="navbar-item">
+                    <a href="" class="active">home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="">about me</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="">experiences</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="">testimonial</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="">contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="container grid-layout">
+        <div class="box box1 grid-2">
+            <img src="assets/media/home-img.jpg" class="img" alt="man">
+        </div>
+        <div class="box box2 grid-2">
+            <article>
+                <h6>welcome to my website</h6>
+                <h1>Hello, I am <strong>Stimulus</strong> currently based in New York city.</h1>
+                <p>Donec auctor arcu at efficitur lacinia. Present bibendum efficitur ipsum, et mattis tellus interdum in. Ut a dictum purus. vestibulum non pellentesque felis, sed dignissim urna. Vestibulum id accumsan quam.</p>
+                <a href="" class="btn-primary">get started</a>
+            </article>
+        </div>
+        <div class="box box3 grid-2">
+            <h2>Donec autor</h2>
+            <h6>Sed vulptate vitae diam quis bibendum</h6>
+            <p>Phasellus vulputate tellus nec tortor varius elementum. Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis congue sem. Mauris convallis eros massa</p>
+            <p>Quisque viverra iaculis aliquam. Etiam volutpat, justo non aliquam bibendum, sem nibh mollis erat, quis porta odio odio odio at velit</p>
+        </div>
+        <div class="box box4 sm-grid">
+            <img src="assets/media/about-img.jpg" class="img" alt="">
+        </div>
+        <div class="box box5 sm-grid smallboxpadding">
+            <h2>my skills</h2>
+            <p>photoshop . <span>html css js</span> web design</p>
+            <div class="scale scale-1">
+                <div class="flex">
+                    <h6>frontend design</h6>
+                    <span>90%</span>
+                </div>
+                <div class="skills-100">
+                    <div class="skills-90"></div>
+                </div>
+            </div>
+            <div class="scale scale-1">
+                <div class="flex">
+                    <h6>backend processing</h6>
+                    <span>70%</span>
+                </div>
+                <div class="skills-100">
+                    <div class="skills-70"></div>
+                </div>
+            </div>
+            <div class="scale scale-1">
+                <div class="flex">
+                    <h6>HTML5 & CSS3</h6>
+                    <span>80%</span>
+                </div>
+                <div class="skills-100">
+                    <div class="skills-80"></div>
+                </div>
+            </div>
+        </div>
+        <div class="box box6 sm-grid smallboxpadding">
+            <i class="fa-solid fa-display"></i>            
+            <h3>interface design</h3>
+            <p>Phasellus vulputate tellus nec torotr varius elementum. Curabitur at pulvinar ante</p>
+        </div>
+        <div class="box box7 sm-grid smallboxpadding">
+            <i class="fa-solid fa-paper-plane"></i>            
+            <h3>media strategy</h3>
+            <p>Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis congue sem</p>
+        </div>
+        <div class="box box8 sm-grid smallboxpadding">
+            <i class="fa-solid fa-calendar-days"></i>            
+            <h3>mobile app</h3>
+            <p>Mauris convallis eros massa, vitae euismod arcu tempus ut. quisque viverra iaculis</p>
+        </div>
+        <div class="box box9 sm-grid smallboxpadding">
+            <i class="fa-brands fa-html5"></i>            
+            <h3>coding</h3>
+            <p>Mauris convallis eros massa, vitae euismod arcu tempus ut. quisque viverra iaculis</p>
+        </div>
+        <div class="box box10 grid-2">
+            <img src="assets/media/experience-img.jpg" class="img" alt="phone">
+        </div>
+        <div class="box box11 grid-2 mediumboxpadding">
+            <h2>my experiences</h2>
+            <p>Previous companies and my tasks</p>
+            <div class="flex designer first-designer flex-start">
+                <i class="fa-solid fa-laptop"></i> 
+                <div>
+                    <h4>graphic designer<span>2014 jul - 2015 sep</span></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipscing elit</p>
+                </div>
+            </div>
+            <div class="flex designer flex-start">
+                <i class="fa-solid fa-laptop"></i> 
+                <div>
+                    <h4>web designer<span>2015 oct - 2017 jan</span></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipscing elit</p>
+                </div>
+            </div>
+        </div>
+        <div class="box box12 grid-2 mediumboxpadding">
+            <h2>my education</h2>
+            <p>In cursus orci non ipsum gravida dignissim</p>
+            <div class="flex designer first-designer flex-start">
+                <i class="fa-solid fa-laptop"></i> 
+                <div>
+                    <h4>master in design<span>2012 jan - 2014 may</span></h4>
+                    <p>Etiam iaculis elit in mauris ullamcorper auctor. Proin a sapien id orci ullamcorper dignissim eu in neque</p>
+                </div>
+            </div>
+            <div class="flex second-designer designer flex-start">
+                <i class="fa-solid fa-laptop"></i> 
+                <div>
+                    <h4>bachelor of arts<span>2008 may - 2011 dec</span></h4>
+                    <p>Etiam iaculis elit in mauris ullamcorper auctor. Proin a sapien id orci ullamcorper dignissim eu in neque</p>
+                </div>
+            </div>
+        </div>
+        <div class="box box13 grid-2">
+            <img src="assets/media/education-img.jpg" class="img" alt="education">
+        </div>
+        <div class="box box14 grid-2 mediumboxpadding">
+            <h2>say hello</h2>
+            <p>Integer ut consectetur est. In cursus orci ipsum gravida dignissim.</p>
+            <form action="">
+                <input type="text" name="name" id="" class="form-control" placeholder="your name">
+                <input type="text" name="email" class="form-control" placeholder="your email">
+                <textarea name="" id="" cols="" rows="10" class="form-control" placeholder="write your mesaage..."></textarea>
+                <button class="btn-secondary">send</button>
+            </form>
+        </div>
+        <div class="box box15 sm-grid">
+            <img src="assets/media/contact-img.jpg" class="img" alt="contact">
+        </div>
+        <div class="box box16 sm-grid smallboxpadding">
+            <h4>Visit my office</h4>
+            <address>456 new street 22000, new york city, USA</address>
+            <h4 class="contact">contact.</h4>
+            <address><i class="fa-solid fa-phone-flip"></i>01-0110-0220</address>
+            <address class="mail"><i class="fa-solid fa-envelope"></i>hello@company.co</address>
+            <a href=""><i class="fa-solid fa-earth-asia"></i>company.co</a>
+        </div>
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13504.71146163107!2d76.36039842125984!3d32.19943760594968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b522c7cd8b85b%3A0x9d68653444d4c03a!2sRakkar%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1657016414491!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <small>Copyright&copy;2016 your company | design:<span>templatemo</span></small>
+        <nav>
+            <ul class="flex footer-navbar flex-center">
+                <li>
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-basketball"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+</body>
